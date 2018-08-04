@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Templating</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="semantic/semantic.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="firstrow" class="ui two column stackable grid">
+        <div id="leftcol" class="column">
+            <div id="catch">
+                <h1>
+                    {{company}}
+                </h1>
+                <h3>
+                    {{catchPhrase}}
+                </h3>
+            </div>
+
+            At {{company}}, we create {{productAdjective}} {{productName}} made of {{productMaterial}}
+            <br>
+            <br> Find out more on
+            <a href="http://{{domainName}}">{{domainName}}</a>
+
+            <div class="ui cards">
+                <div id="card" class="ui centered card">
+                    <div class="image">
+                        <img src="{{productImage}}">
+                    </div>
+                    <div class="content center aligned">
+                        <div class="header">{{productName}}</div>
+                        <div class="meta">
+                            <br>
+                            Material : {{productMaterial}}
+                            <br>
+                            Color : {{color}}
+                        </div>
+                        <div class="description">
+                            {{price}} $ Only !
+                        </div>
+                    </div>
+                    <div class="extra content center aligned">
+                        <button class="ui inverted green button">Take my money</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="rightcol" class="column center aligned">
+
+            <div class="ui middle aligned">
+                <div>
+                    <img class="ui centered image circular" src="{{ userImage }}" alt="">
+                </div>
+
+                <h4>{{firstname}} {{lastname}}</h4>
+
+                <h4>{{job}}</h4>
+
+                <div>
+                    <h1>
+                        Contact Info
+                    </h1>
+
+                    <div>
+                        {{mail}}
+                        <br> {{phone}}
+                    </div>
+                    <br>
+                    <div>
+                        {{buildingNumber}} {{streetName}}
+                        <br> {{cityNumber}} {{city}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="jquery/jquery.js"></script>
+    <script src="semantic/semantic.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

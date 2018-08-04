@@ -1,0 +1,14 @@
+{
+    "name": "xledocteurx/templating",
+    "require": {
+        "twig/twig": "^2.5",
+        "fzaninotto/faker": "^1.8",
+        "mbezhanov/faker-provider-collection": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "xLeDocteurx",
+            "email": "lenoirc.fr@gmail.com"
+        }
+    ]
+}

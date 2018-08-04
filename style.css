@@ -1,0 +1,27 @@
+textarea {
+
+    resize: none;
+}
+
+#firstrow {
+    height: 100%;
+}
+
+#leftcol {
+    margin: 0px;
+    padding: 50px;
+}
+
+#rightcol {
+    margin: 0px;
+    padding: 50px;
+}
+
+#catch {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#card {
+    margin-top: 50px;
+}
