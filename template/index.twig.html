@@ -10,11 +10,16 @@
 
     <link rel="stylesheet" href="semantic/semantic.css">
     <link rel="stylesheet" href="style.css">
+
+    <script src="scrollreveal.js"></script>
+    <script>
+        window.sr = ScrollReveal({ duration: 1000 });
+    </script>
 </head>
 
 <body>
 
-    <div id="firstrow" class="ui two column stackable grid">
+    <div id="firstrow" class="fadeInUp animated ui two column stackable grid">
         <div id="leftcol" class="column">
             <div id="catch">
                 <h1>
@@ -88,6 +93,10 @@
     <script src="jquery/jquery.js"></script>
     <script src="semantic/semantic.js"></script>
     <script src="scripts.js"></script>
+    
+<script>
+  sr.reveal('.animated');
+</script>
 </body>
 
 </html>
